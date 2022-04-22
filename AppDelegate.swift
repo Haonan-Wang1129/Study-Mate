@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  StudyMate
+//  studymate
 //
-//  Created by Haonan Wang on 4/7/22.
+//  Created by Haonan Wang on 4/21/22.
 //
 
 import UIKit
@@ -11,11 +11,13 @@ import Parse
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let parseConfig = ParseClientConfiguration {
-            $0.applicationId = "V1CLdV7KPSmCZeCgZHCrEMWguFlqHNHlwjIZyCST"
-            $0.clientKey = "kP3Jqmhhkatern4WPmzQdGwt34I3H7HUcS2BOIj8"
+            $0.applicationId = "MkEk0pVBPxKu1TDyIjnX6lxCdar9lARWsKBKTpxt"
+            $0.clientKey = "OcsxaduGtbM9Dh1npDiywYCfCnhzDwQ8CpCmVWTF"
             $0.server = "https://parseapi.back4app.com"
         }
         Parse.initialize(with: parseConfig)

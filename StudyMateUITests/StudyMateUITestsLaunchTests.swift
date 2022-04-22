@@ -1,13 +1,13 @@
 //
-//  StudyMateUITestsLaunchTests.swift
-//  StudyMateUITests
+//  studymateUITestsLaunchTests.swift
+//  studymateUITests
 //
-//  Created by Haonan Wang on 4/7/22.
+//  Created by Haonan Wang on 4/21/22.
 //
 
 import XCTest
 
-class StudyMateUITestsLaunchTests: XCTestCase {
+class studymateUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

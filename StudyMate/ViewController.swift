@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  StudyMate
+//  studymate
 //
-//  Created by Haonan Wang on 4/7/22.
+//  Created by Haonan Wang on 4/21/22.
 //
 
 import UIKit

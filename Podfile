@@ -1,20 +1,22 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'StudyMate' do
+target 'studymate' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for StudyMate
+  # Pods for studymate
 
-  target 'StudyMateTests' do
+  target 'studymateTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'StudyMateUITests' do
+  target 'studymateUITests' do
     # Pods for testing
   end
-  pod 'AlamofireImage'
+
   pod 'Parse'
+  pod 'AlamofireImage'
+
 end

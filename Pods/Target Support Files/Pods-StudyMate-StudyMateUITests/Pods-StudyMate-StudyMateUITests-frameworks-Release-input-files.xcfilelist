@@ -1,4 +1,4 @@
-${PODS_ROOT}/Target Support Files/Pods-StudyMate-StudyMateUITests/Pods-StudyMate-StudyMateUITests-frameworks.sh
+${PODS_ROOT}/Target Support Files/Pods-studymate-studymateUITests/Pods-studymate-studymateUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework

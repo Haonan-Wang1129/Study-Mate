@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1330"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A2A1C1C3D4E47C482CBD38B1EAD245EF"
-               BuildableName = "Pods_StudyMate.framework"
-               BlueprintName = "Pods-StudyMate"
+               BlueprintIdentifier = "436C70E6F342963FF79AD4CCED629F48"
+               BuildableName = "Pods_studymate.framework"
+               BlueprintName = "Pods-studymate"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

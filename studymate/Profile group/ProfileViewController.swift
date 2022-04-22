@@ -1,8 +1,8 @@
 //
 //  ProfileViewController.swift
-//  StudyMate
+//  studymate
 //
-//  Created by Haonan Wang on 4/7/22.
+//  Created by Haonan Wang on 4/22/22.
 //
 
 import UIKit
@@ -10,23 +10,32 @@ import Parse
 import AlamofireImage
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var majorLabel: UILabel!
-    @IBOutlet weak var bioLabel: UILabel!
+    @IBOutlet weak var collegeLabel: UILabel!
+    @IBOutlet weak var bioText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserDefaults.standard.bool(forKey: "hasProfile") {
-            showProfile()
-        } else {
-            self.nameLabel.text = "No name"
-            self.majorLabel.text = "No major"
-            self.yearLabel.text = "No year"
-            self.bioLabel.text = "No biography"
+        let user = PFUser.current()!
+        self.nameLabel.text = user.value(forKey: "name") as? String
+        self.majorLabel.text = user.value(forKey: "major") as? String
+        self.yearLabel.text = user.value(forKey: "year") as? String
+        self.collegeLabel.text = user.value(forKey: "university") as? String
+        self.bioText.text = user["bio"] as? String
+        let imageFile = user["image"] as? PFFileObject
+        imageFile!.getDataInBackground {(imageData: Data?, error: Error?) in
+            if let error = error {
+                print("show profile image failed in PFUser: \(error.localizedDescription)")
+            }
+            else if let imageData = imageData {
+                let image = UIImage(data: imageData)
+                self.profileImage.image = image
+            }
         }
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,25 +43,29 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         viewDidLoad()
     }
     
-    @IBAction func onLogout(_ sender: Any) {
-        // TODO: waiting for login view controller
-        // MARK: used to logout and return to login view when clicked
+    @IBAction func onLogOut(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LogInViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
+        delegate.window?.rootViewController = loginViewController
     }
     
+    /*
     func showProfile() {
-        let query = PFQuery(className: "Profile")
+        let query = PFQuery(className: "User")
         query.getObjectInBackground(withId: UserDefaults.standard.string(forKey: "profileId")!) {
             (profile, error) in
             if error == nil {
-                self.nameLabel.text = profile!["prefferedName"] as? String
+                self.nameLabel.text = profile!["name"] as? String
                 self.yearLabel.text = profile!["year"] as? String
                 self.majorLabel.text = profile!["major"] as? String
-                self.bioLabel.text = profile!["biography"] as? String
+                self.bioText.text = profile!["biography"] as? String
                 
                 let imageFile = profile!["image"] as? PFFileObject
                 imageFile!.getDataInBackground {(imageData: Data?, error: Error?) in
                     if let error = error {
-                        print(error.localizedDescription)
+                        print("show profile image failed in PFQuery: \(error.localizedDescription)")
                     }
                     else if let imageData = imageData {
                         let image = UIImage(data: imageData)
@@ -63,11 +76,12 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 self.nameLabel.text = "No name"
                 self.majorLabel.text = "No major"
                 self.yearLabel.text = "No year"
-                self.bioLabel.text = "No biography"
+                self.bioText.text = "No biography"
             }
         }
     }
     
+     */
     /*
     // MARK: - Navigation
 
@@ -78,24 +92,4 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     */
 
-}
-
-// MARK: currently using a singleton implementation to save profile info globally
-// TODO: need a way to fetch other users profile info, don't know if this would work
-class ProfileInfo {
-    static let userProfile = ProfileInfo()
-    
-    var name: String
-    var year: String
-    var major: String
-    var introduction: String
-    
-    private init() {
-        self.name = "None (name)"
-        self.year = "None (class year)"
-        self.major = "None (major)"
-        self.introduction = "None (brief introduction)"
-    }
-    
-    // MARK: maybe image should also be included and decided here?
 }

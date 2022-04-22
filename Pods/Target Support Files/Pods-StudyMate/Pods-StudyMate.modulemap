@@ -1,5 +1,5 @@
-framework module Pods_StudyMate {
-  umbrella header "Pods-StudyMate-umbrella.h"
+framework module Pods_studymate {
+  umbrella header "Pods-studymate-umbrella.h"
 
   export *
   module * { export * }

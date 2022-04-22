@@ -39,21 +39,21 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>Pods-StudyMate-StudyMateUITests.xcscheme</key>
+		<key>Pods-studymate-studymateUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>Pods-StudyMate.xcscheme</key>
+		<key>Pods-studymate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>Pods-StudyMateTests.xcscheme</key>
+		<key>Pods-studymateTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
