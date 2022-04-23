@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		025C68C9883830338E66E89B /* Pods_studymate_studymateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946559E783B011DDA0AAC2D0 /* Pods_studymate_studymateUITests.framework */; };
 		675E4ACABCBC08DF85FEA665 /* Pods_studymate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C7D4C4B1F8C14825E0E5AF /* Pods_studymate.framework */; };
+		B6B18C0E2813B90C00BE8421 /* MatchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B18C0D2813B90B00BE8421 /* MatchViewCell.swift */; };
+		B6B18C102813BBF600BE8421 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B18C0F2813BBF600BE8421 /* HomeViewController.swift */; };
 		DBD2DCAC3A9B25F571E705BF /* Pods_studymateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD7675D32163F88753A4C56 /* Pods_studymateTests.framework */; };
 		F081E6E02812509D001B2967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E6DF2812509D001B2967 /* AppDelegate.swift */; };
 		F081E6E22812509D001B2967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E6E12812509D001B2967 /* SceneDelegate.swift */; };
@@ -21,7 +23,6 @@
 		F081E71128125437001B2967 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E71028125437001B2967 /* logInViewController.swift */; };
 		F081E71628125C3D001B2967 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E71528125C3D001B2967 /* SignUpViewController.swift */; };
 		F081E71B28126AD3001B2967 /* collegeApiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E71A28126AD3001B2967 /* collegeApiStruct.swift */; };
-		F081E71E28126CB0001B2967 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E71D28126CB0001B2967 /* HomeViewController.swift */; };
 		F081E72028126F0C001B2967 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E71F28126F0C001B2967 /* ProfileViewController.swift */; };
 		F081E72228126F1C001B2967 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E72128126F1C001B2967 /* EditViewController.swift */; };
 		F081E72628128E6A001B2967 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F081E72528128E6A001B2967 /* SearchViewController.swift */; };
@@ -53,6 +54,8 @@
 		642697747F07131273506B36 /* Pods-studymate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studymate.release.xcconfig"; path = "Target Support Files/Pods-studymate/Pods-studymate.release.xcconfig"; sourceTree = "<group>"; };
 		7E9705E74C0C6084C3248D3D /* Pods-studymateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studymateTests.release.xcconfig"; path = "Target Support Files/Pods-studymateTests/Pods-studymateTests.release.xcconfig"; sourceTree = "<group>"; };
 		946559E783B011DDA0AAC2D0 /* Pods_studymate_studymateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studymate_studymateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6B18C0D2813B90B00BE8421 /* MatchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MatchViewCell.swift; path = "StudyMate/Home group/MatchViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		B6B18C0F2813BBF600BE8421 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "StudyMate/Home group/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		C720F73279C374130E2BC7B1 /* Pods-studymateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-studymateTests.debug.xcconfig"; path = "Target Support Files/Pods-studymateTests/Pods-studymateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F081E6DC2812509D001B2967 /* studymate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studymate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F081E6DF2812509D001B2967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		F081E71028125437001B2967 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
 		F081E71528125C3D001B2967 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F081E71A28126AD3001B2967 /* collegeApiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collegeApiStruct.swift; sourceTree = "<group>"; };
-		F081E71D28126CB0001B2967 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F081E71F28126F0C001B2967 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F081E72128126F1C001B2967 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		F081E72528128E6A001B2967 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -216,7 +218,8 @@
 		F081E71828126A53001B2967 /* Home group */ = {
 			isa = PBXGroup;
 			children = (
-				F081E71D28126CB0001B2967 /* HomeViewController.swift */,
+				B6B18C0D2813B90B00BE8421 /* MatchViewCell.swift */,
+				B6B18C0F2813BBF600BE8421 /* HomeViewController.swift */,
 			);
 			path = "Home group";
 			sourceTree = "<group>";
@@ -483,9 +486,10 @@
 				F081E72628128E6A001B2967 /* SearchViewController.swift in Sources */,
 				F081E6E22812509D001B2967 /* SceneDelegate.swift in Sources */,
 				F081E71628125C3D001B2967 /* SignUpViewController.swift in Sources */,
+				B6B18C102813BBF600BE8421 /* HomeViewController.swift in Sources */,
 				F081E72028126F0C001B2967 /* ProfileViewController.swift in Sources */,
+				B6B18C0E2813B90C00BE8421 /* MatchViewCell.swift in Sources */,
 				F081E71B28126AD3001B2967 /* collegeApiStruct.swift in Sources */,
-				F081E71E28126CB0001B2967 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
