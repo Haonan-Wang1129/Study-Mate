@@ -94,7 +94,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! CollegeCell
         callBack?(cell.univName.text ?? "selection failed")
-        self.tableView.tableHeaderView = nil
+        searchController.dismiss(animated: true)
         self.navigationController?.popViewController(animated: true)
     }
 }

@@ -32,6 +32,7 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             vc.callBack = { (collegeName: String) in
                 self.universityField.text = collegeName
             }
+            self.universityField.endEditing(true)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

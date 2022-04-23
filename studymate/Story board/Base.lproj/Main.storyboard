@@ -352,7 +352,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="onEditCollege:" destination="9bf-qE-1Lh" eventType="editingDidEnd" id="i1a-WV-VBf"/>
+                                    <action selector="onEditCollege:" destination="9bf-qE-1Lh" eventType="editingDidBegin" id="sI3-bw-qZN"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-ef-Q5F">
