@@ -2,20 +2,33 @@
 //  HomeViewController.swift
 //  studymate
 //
-//  Created by Haonan Wang on 4/22/22.
+//  Created by Tahamid on 4/23/22.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
 
         // Do any additional setup after loading the view.
     }
     
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MatchViewCell") as! MatchViewCell
+        cell.nameLabel.text! = "Tahamid"
+        return cell
+    }
     /*
     // MARK: - Navigation
 
