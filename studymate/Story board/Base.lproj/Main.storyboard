@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -340,8 +340,8 @@
                                                         <constraint firstAttribute="width" constant="120" id="bQf-zp-TWY"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkA-t1-OWi">
-                                                    <rect key="frame" x="136" y="8" width="254" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkA-t1-OWi">
+                                                    <rect key="frame" x="136" y="8" width="196" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -364,6 +364,15 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yna-XG-Z7O">
+                                                    <rect key="frame" x="359" y="3" width="45" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="person.badge.plus" catalog="system" title=""/>
+                                                    <connections>
+                                                        <action selector="onAdd:" destination="Jdw-WD-rmx" eventType="touchUpInside" id="bDg-hl-Pvh"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="inP-MF-Xwh" firstAttribute="leading" secondItem="FEj-d5-euQ" secondAttribute="leading" constant="8" id="3b4-0M-zgA"/>
@@ -389,6 +398,7 @@
                                             <outlet property="classYearLabel" destination="lnk-7h-WLZ" id="EU0-H3-idX"/>
                                             <outlet property="majorLabel" destination="T1I-O0-lYV" id="M1K-Ut-HrF"/>
                                             <outlet property="nameLabel" destination="mkA-t1-OWi" id="uY8-jV-IaN"/>
+                                            <outlet property="profileView" destination="inP-MF-Xwh" id="ANB-bp-oPi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -834,6 +844,7 @@
         <image name="message.and.waveform" catalog="system" width="128" height="111"/>
         <image name="paperclip" catalog="system" width="121" height="128"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
