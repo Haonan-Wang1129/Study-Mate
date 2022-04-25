@@ -9,6 +9,11 @@ import UIKit
 
 class MatchViewCell: UITableViewCell {
 
+    @IBAction func onAdd(_ sender: Any) {
+        print("added")
+    }
+    
+    @IBOutlet weak var profileView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var classYearLabel: UILabel!
     @IBOutlet weak var majorLabel: UILabel!
